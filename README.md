@@ -10,30 +10,31 @@ Before running the application, ensure that you have the following installed:
 - Docker (for running PostgreSQL in a container)
 - Setting Up the Application
 
-## Clone this repository to your local machine:
-```bash
-Copy code
-git clone 
-Navigate to the project directory:
-```
+## Clone this repository to your local machine
 
-```bash
-cd project_directory
+`git clone https://github.com/IntegerAlex/sql-injection-demo`
+
+Navigate to the project directory:
+
+`cd project_directory`
 Install dependencies:
-```
 
 `npm install`
 
 ## PostgreSQL Docker Container
+
 To run the application, you'll need a PostgreSQL database. You can use Docker to quickly spin up a PostgreSQL container:
 
 `docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres`
 
 ### Running the Application
+
 Once the PostgreSQL container is running, you can start the Node.js application:
 
+TO initilize database run the following command:
 `node init.js`
 
+To start the application, run:
 `npm run dev`
 
 The application will start listening on port 3000 by default.
