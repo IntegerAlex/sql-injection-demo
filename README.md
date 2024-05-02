@@ -32,7 +32,7 @@ To run the application, you'll need a PostgreSQL database. You can use Docker to
 Once the PostgreSQL container is running, you can start the Node.js application:
 
 TO initilize database run the following command:
-`node init.js`
+`npm run db`
 
 To start the application, run:
 `npm run dev`
