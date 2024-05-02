@@ -8,9 +8,10 @@ Before running the application, ensure that you have the following installed:
 
 - Node.js and npm
 - Docker (for running PostgreSQL in a container)
-- Setting Up the Application
 
-## Clone this repository to your local machine
+## Setting Up the Application
+
+### Clone this repository to your local machine
 
 `git clone https://github.com/IntegerAlex/sql-injection-demo`
 
