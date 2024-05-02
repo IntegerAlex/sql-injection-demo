@@ -25,7 +25,8 @@ app.post("/products", async (req, res) => {
   console.log(req.body);  
 
     try {
-        
+        // 'UNION SELECT ProductID, ProductName, Description, Price, StockQuantity FROM Products; --
+        // sudo docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
         const query = `SELECT * FROM products WHERE ProductName LIKE '%${req.body.name}%'`;
         const result = await client.query(query);
 
